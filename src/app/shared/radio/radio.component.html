@@ -1,0 +1,22 @@
+<ul class="agile_info_select">
+  <div *ngFor="let option of options" style="display: inline;">
+    <li>
+      <div (click)="setValue(option.value)" class="iradio_flat-red check w3ls" [class.checked]="option.value === value">
+        <ins class="iCheck-helper"></ins>
+      </div>
+      <label style="color: white; padding: 5px;">{{option.label}}</label>
+    </li>
+  </div>
+</ul>
+
+    <ul class="agile_info_select">
+       <li><input type="radio" name="view" id="bad" checked="checked"> 
+          <label for="bad">Yes</label>
+          <div class="check w3"></div>
+       </li>
+       <li><input type="radio" name="view" id="poor"> 
+          <label for="poor">No</label>
+          <div class="check w3ls"></div>
+       </li>
+     </ul>
+     <div class="clear"></div>
